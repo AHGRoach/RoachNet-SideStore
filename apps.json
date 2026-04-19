@@ -15,18 +15,18 @@
       "iconURL": "https://raw.githubusercontent.com/AHGRoach/RoachNet-SideStore/main/assets/roachnet-ios-icon.png",
       "tintColor": "#54F29A",
       "screenshotURLs": [
-        "https://roachnet.org/assets/screens/roachnet-ios-companion-chat.jpg",
-        "https://roachnet.org/assets/screens/roachnet-ios-apps-v011.jpg",
-        "https://roachnet.org/assets/screens/roachnet-ios-runtime-v011.jpg",
-        "https://roachnet.org/assets/screens/roachnet-ios-vault-v011.jpg"
+        "https://roachnet.org/assets/screens/roachnet-ios-companion-chat-v013.jpg",
+        "https://roachnet.org/assets/screens/roachnet-ios-companion-apps-v013.jpg",
+        "https://roachnet.org/assets/screens/roachnet-ios-companion-runtime-v013.jpg",
+        "https://roachnet.org/assets/screens/roachnet-ios-companion-vault-v013.jpg"
       ],
       "versions": [
         {
           "version": "0.1.3",
-          "date": "2026-04-17T07:35:27Z",
+          "date": "2026-04-19T02:22:20Z",
           "localizedDescription": "Adds the refreshed companion shell, desktop-matched RoachClaw styling, vault shelf cards, stronger runtime reads, and the updated install handoff lane.",
           "downloadURL": "https://github.com/AHGRoach/RoachNet-iOS/releases/latest/download/RoachNetiOS-v0.1.3-unsigned.ipa",
-          "size": 1682440,
+          "size": 1708185,
           "minOSVersion": "17.0"
         }
       ],
