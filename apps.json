@@ -22,11 +22,11 @@
       ],
       "versions": [
         {
-          "version": "0.1.3",
-          "date": "2026-04-19T02:22:20Z",
-          "localizedDescription": "Adds the refreshed companion shell, desktop-matched RoachClaw styling, vault shelf cards, stronger runtime reads, and the updated install handoff lane.",
-          "downloadURL": "https://github.com/AHGRoach/RoachNet-iOS/releases/latest/download/RoachNetiOS-v0.1.3-unsigned.ipa",
-          "size": 1708185,
+          "version": "0.1.4",
+          "date": "2026-05-04T02:24:40Z",
+          "localizedDescription": "Adds the v1.0.4 companion contract, refreshed desktop pairing checks, stronger vault/runtime reads, and the unsigned SideStore IPA lane.",
+          "downloadURL": "https://github.com/AHGRoach/RoachNet-iOS/releases/latest/download/RoachNetiOS-v0.1.4-unsigned.ipa",
+          "size": 1729733,
           "minOSVersion": "17.0"
         }
       ],
