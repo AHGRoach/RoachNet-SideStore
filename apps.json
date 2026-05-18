@@ -1,32 +1,32 @@
 {
   "name": "RoachNet",
   "identifier": "org.roachnet.sidestore",
-  "subtitle": "RoachNetiOS installs for SideStore",
-  "description": "RoachNetiOS keeps RoachClaw, vault reads, runtime checks, and install handoff close on iPhone and iPad.",
+  "subtitle": "RoachNetiOS installs for SideStore and AltStore",
+  "description": "Shared RoachNetiOS AltSource for SideStore and AltStore, with RoachClaw, vault reads, runtime checks, install handoff, and the RoachAtlas GPS bridge close on iPhone and iPad.",
   "iconURL": "https://raw.githubusercontent.com/RoachWares/RoachNet-SideStore/main/assets/roachnet-ios-icon.png",
-  "website": "https://roachnet.org/iOS/",
+  "website": "https://roachnet.org/ios/",
   "apps": [
     {
       "name": "RoachNetiOS",
       "bundleIdentifier": "com.roachwares.RoachNetCompanion",
       "developerName": "RoachWares LLC",
       "subtitle": "RoachClaw in your pocket",
-      "localizedDescription": "RoachNetiOS keeps chat, runtime reads, vault shelf access, and install handoff close. Pair to your desktop over RoachTail, or fall back to the offline-capable local lane when the bridge is down.",
+      "localizedDescription": "RoachNetiOS keeps chat, voice prompts, image context, runtime reads, vault shelf access, install handoff, and a foreground-only RoachAtlas GPS bridge close. Pair to your desktop over RoachTail, or fall back to the offline-capable local lane when the bridge is down.",
       "iconURL": "https://raw.githubusercontent.com/RoachWares/RoachNet-SideStore/main/assets/roachnet-ios-icon.png",
       "tintColor": "#54F29A",
       "screenshotURLs": [
-        "https://roachnet.org/assets/screens/roachnet-ios-companion-chat-v013.jpg",
-        "https://roachnet.org/assets/screens/roachnet-ios-companion-apps-v013.jpg",
-        "https://roachnet.org/assets/screens/roachnet-ios-companion-runtime-v013.jpg",
-        "https://roachnet.org/assets/screens/roachnet-ios-companion-vault-v013.jpg"
+        "https://roachnet.org/assets/screens/roachnet-ios-companion-chat-v015.jpg",
+        "https://roachnet.org/assets/screens/roachnet-ios-companion-apps-v015.jpg",
+        "https://roachnet.org/assets/screens/roachnet-ios-companion-runtime-v015.jpg",
+        "https://roachnet.org/assets/screens/roachnet-ios-companion-vault-v015.jpg"
       ],
       "versions": [
         {
-          "version": "0.1.4",
-          "date": "2026-05-04T02:24:40Z",
-          "localizedDescription": "Adds the v1.0.4 companion contract, refreshed desktop pairing checks, stronger vault/runtime reads, and the unsigned SideStore IPA lane.",
-          "downloadURL": "https://github.com/RoachWares/RoachNet-iOS/releases/latest/download/RoachNetiOS-v0.1.4-unsigned.ipa",
-          "size": 1729731,
+          "version": "0.1.5",
+          "date": "2026-05-18T03:21:27Z",
+          "localizedDescription": "Adds the v1.0.5 companion contract, foreground RoachAtlas GPS BLE bridge, refreshed privacy prompts, and the shared SideStore/AltStore IPA lane.",
+          "downloadURL": "https://github.com/RoachWares/RoachNet-iOS/releases/latest/download/RoachNetiOS-v0.1.5-unsigned.ipa",
+          "size": 1899293,
           "minOSVersion": "17.0"
         }
       ],
@@ -34,7 +34,11 @@
         "entitlements": [],
         "privacy": {
           "NSCameraUsageDescription": "RoachNetiOS uses the camera to scan RoachTail pairing QR codes from your Mac.",
-          "NSLocalNetworkUsageDescription": "RoachNet iOS connects to your Mac companion runtime so you can keep using chats, vault data, and installs from your phone."
+          "NSLocalNetworkUsageDescription": "RoachNet iOS connects to your Mac companion runtime so you can keep using chats, vault data, and installs from your phone.",
+          "NSBluetoothAlwaysUsageDescription": "RoachNetiOS uses Bluetooth only when you start the RoachAtlas GPS bridge, so your Mac can read a local foreground GPS packet.",
+          "NSLocationWhenInUseUsageDescription": "RoachNetiOS uses your location only while the foreground RoachAtlas GPS bridge is running for your paired Mac.",
+          "NSMicrophoneUsageDescription": "RoachNetiOS uses the microphone for local voice prompts in RoachClaw.",
+          "NSSpeechRecognitionUsageDescription": "RoachNetiOS turns speech into prompts so RoachClaw can stay hands-free when you need it."
         }
       }
     }
